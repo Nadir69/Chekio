@@ -9,3 +9,4 @@ def check_pangram(text):
         return True
     else:
         return False
+
