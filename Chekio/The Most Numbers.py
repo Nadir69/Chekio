@@ -2,6 +2,7 @@ __author__ = 'v_shabalin'
 
 
 def checkio(*args):
+def checkio(*args):
     if args:
         return (max(args) - min(args))
     else:

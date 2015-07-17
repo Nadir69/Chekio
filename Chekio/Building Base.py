@@ -9,9 +9,6 @@ class Building:
         self.width_NS = width_NS
         self.height = height
 
-    def Building(self):
-        return self.south, self.west, self.width_WE, self.width_NS, self.height)
-
     def corners(self):
         d = {}
         d['north-west'] = [self.south+self.width_NS, self.west]
@@ -24,14 +21,15 @@ class Building:
         return self.width_NS * self.width_WE
 
     def volume(self):
-        return self.width_NS * self.width_WE * self.height
+        return self.area() * self.height
 
     def __repr__(self):
-        pass
+        return "Building({}, {}, {}, {}, {})".format(self.south, self.west, self.width_WE, self.width_NS, self.height)
 
 
 
 print Building(1, 2, 2, 2).corners()
 print Building(1, 2.5, 4.2, 1.25).area()
-print Building(10, 10, 1, 2, 2)
+#print Building(10, 10, 1, 2, 2).Building
 print Building(1, 2.5, 4.2, 1.25, 101).volume()
+print str(Building(0.2, 1, 2, 2.2, 3.5))
