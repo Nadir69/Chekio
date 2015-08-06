@@ -2,7 +2,7 @@ __author__ = 'v_shabalin'
 
 class Building:
 
-    def __init__(self, south, west, width_WE, width_NS, height=10):
+def __init__(self, south, west, width_WE, width_NS, height=10):
         self.south = south
         self.west = west
         self.width_WE = width_WE
