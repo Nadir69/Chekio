@@ -12,6 +12,6 @@ def checkio(a, b, c):
             result.append(angle_acos)
         else:
             return [0, 0, 0]
-    return result
+    return sorted(result)
 
 print checkio(2, 2, 5)
