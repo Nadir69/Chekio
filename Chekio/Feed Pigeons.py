@@ -1,12 +1,17 @@
 __author__ = 'v_shabalin'
 
-def checkio(number):
-    pigeons = 1 #how much pigeons eat per minute
+def checkio(food):
+    pigeons = 1
     count = 1
-    while number >= pigeons:
-        number -= pigeons
+    while food > pigeons:
+        food -= pigeons
         count += 1
         pigeons += count
-    return pigeons - count
+    else:
+        if food > (pigeons - count):
+            return food
+        else:
+            return pigeons - count
 
-print checkio(20)
+
+print checkio(10)
