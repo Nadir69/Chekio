@@ -30,6 +30,5 @@ class Building:
 
 print Building(1, 2, 2, 2).corners()
 print Building(1, 2.5, 4.2, 1.25).area()
-#print Building(10, 10, 1, 2, 2).Building
 print Building(1, 2.5, 4.2, 1.25, 101).volume()
 print str(Building(0.2, 1, 2, 2.2, 3.5))
